@@ -9,15 +9,45 @@
 import UIKit
 import CoreData
 
+import AWSCore
+import AWSPinpoint
+import AWSMobileClient
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
+        
+        return AWSMobileClient.sharedInstance().interceptApplication(
+            application, open: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
+    }
 
-
+    var pinpoint: AWSPinpoint?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        
+        ///***added this junk to see if we can actually see the window
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainViewController = ViewController()
+        window?.rootViewController = mainViewController
+        window?.makeKeyAndVisible()
+        window?.backgroundColor = .red
+        ///***this is where it ends
+        
+        pinpoint = AWSPinpoint(configuration:
+            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+        
+        // Create AWSMobileClient to connect with AWS
+        return AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
