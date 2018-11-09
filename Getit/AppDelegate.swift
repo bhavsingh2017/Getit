@@ -6,12 +6,15 @@
 //  Copyright © 2018 AppDevs. All rights reserved.
 //
 
+
+
 import UIKit
 import CoreData
 
 import AWSCore
 import AWSPinpoint
 import AWSMobileClient
+
 
 @UIApplicationMain
 
@@ -36,14 +39,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         ///***added this junk to see if we can actually see the window
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainViewController = ViewController()
-        window?.rootViewController = mainViewController
-        window?.makeKeyAndVisible()
-        window?.backgroundColor = .red
+        let homeViewController = ViewController()
+        homeViewController.view.backgroundColor = UIColor.orange
+        window!.rootViewController = homeViewController
+        window!.makeKeyAndVisible()
+        
+        //here the homescreen is visible and ready to be viewed
+        
+        
         ///***this is where it ends
         
         pinpoint = AWSPinpoint(configuration:
             AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+        
+        
+        //to make sure that we are logged in//
+        //**************************************//
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
+        AWSDDLog.sharedInstance.logLevel = .info
+        //**************************************//
         
         // Create AWSMobileClient to connect with AWS
         return AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)

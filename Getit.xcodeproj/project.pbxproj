@@ -16,6 +16,11 @@
 		6B773AFD21919C9D00D5983A /* GetitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B773AFC21919C9D00D5983A /* GetitTests.swift */; };
 		6B773B0821919C9D00D5983A /* GetitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B773B0721919C9D00D5983A /* GetitUITests.swift */; };
 		6B773B1621919F0B00D5983A /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B773B1521919F0A00D5983A /* awsconfiguration.json */; };
+		6B773B3A21950A0D00D5983A /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B773B3721950A0700D5983A /* CircleMenuButton.swift */; };
+		6B773B3B21950A0D00D5983A /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B773B3821950A0D00D5983A /* CircleMenuLoader.swift */; };
+		6B773B3C21950A0D00D5983A /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B773B3921950A0D00D5983A /* CircleMenu.swift */; };
+		6B773B442195118900D5983A /* the-youtube-logo-3238901_640.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B773B432195118900D5983A /* the-youtube-logo-3238901_640.png */; };
+		6B773B4621951F0A00D5983A /* drunkGiraffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B773B4521951F0A00D5983A /* drunkGiraffe.jpg */; };
 		D8BAEEC48FF63BE07DFA00A5 /* Pods_GetitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E7BB484B9FC9D7F7D41673 /* Pods_GetitTests.framework */; };
 		F5D9AF10B8D11EF461845D44 /* Pods_Getit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E982E3A07330638F3E5CEEBC /* Pods_Getit.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +60,14 @@
 		6B773B0721919C9D00D5983A /* GetitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetitUITests.swift; sourceTree = "<group>"; };
 		6B773B0921919C9D00D5983A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B773B1521919F0A00D5983A /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		6B773B3721950A0700D5983A /* CircleMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleMenuButton.swift; path = "../../../../Downloads/circle-menu-master-2/CircleMenuLib/CircleMenuButton/CircleMenuButton.swift"; sourceTree = "<group>"; };
+		6B773B3821950A0D00D5983A /* CircleMenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleMenuLoader.swift; path = "../../../../Downloads/circle-menu-master-2/CircleMenuLib/CircleMenuLoader/CircleMenuLoader.swift"; sourceTree = "<group>"; };
+		6B773B3921950A0D00D5983A /* CircleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleMenu.swift; path = "../../../../Downloads/circle-menu-master-2/CircleMenuLib/CircleMenu.swift"; sourceTree = "<group>"; };
+		6B773B3E21950A5D00D5983A /* CircleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenu.swift; sourceTree = "<group>"; };
+		6B773B3F21950A6E00D5983A /* CircleMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuButton.swift; sourceTree = "<group>"; };
+		6B773B4021950A7200D5983A /* CircleMenuLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuLoader.swift; sourceTree = "<group>"; };
+		6B773B432195118900D5983A /* the-youtube-logo-3238901_640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "the-youtube-logo-3238901_640.png"; path = "../../../the-youtube-logo-3238901_640.png"; sourceTree = "<group>"; };
+		6B773B4521951F0A00D5983A /* drunkGiraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drunkGiraffe.jpg; path = ../../../drunkGiraffe.jpg; sourceTree = "<group>"; };
 		83E7BB484B9FC9D7F7D41673 /* Pods_GetitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB36707253846E802E5E68 /* Pods-GetitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetitUITests.release.xcconfig"; path = "Target Support Files/Pods-GetitUITests/Pods-GetitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4DDE1493500B35477C0FDAB /* Pods_GetitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,10 +142,16 @@
 		6B773AE321919C9B00D5983A /* Getit */ = {
 			isa = PBXGroup;
 			children = (
+				6B773B3D21950A5500D5983A /* CircleMenu */,
+				6B773B3921950A0D00D5983A /* CircleMenu.swift */,
+				6B773B3721950A0700D5983A /* CircleMenuButton.swift */,
+				6B773B3821950A0D00D5983A /* CircleMenuLoader.swift */,
 				6B773AE421919C9B00D5983A /* AppDelegate.swift */,
-				6B773B1521919F0A00D5983A /* awsconfiguration.json */,
 				6B773AE621919C9B00D5983A /* ViewController.swift */,
+				6B773B1521919F0A00D5983A /* awsconfiguration.json */,
 				6B773AEE21919C9D00D5983A /* Assets.xcassets */,
+				6B773B4521951F0A00D5983A /* drunkGiraffe.jpg */,
+				6B773B432195118900D5983A /* the-youtube-logo-3238901_640.png */,
 				6B773AF021919C9D00D5983A /* LaunchScreen.storyboard */,
 				6B773AF321919C9D00D5983A /* Info.plist */,
 				6B773AEB21919C9B00D5983A /* Getit.xcdatamodeld */,
@@ -156,6 +175,16 @@
 				6B773B0921919C9D00D5983A /* Info.plist */,
 			);
 			path = GetitUITests;
+			sourceTree = "<group>";
+		};
+		6B773B3D21950A5500D5983A /* CircleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6B773B4021950A7200D5983A /* CircleMenuLoader.swift */,
+				6B773B3F21950A6E00D5983A /* CircleMenuButton.swift */,
+				6B773B3E21950A5D00D5983A /* CircleMenu.swift */,
+			);
+			path = CircleMenu;
 			sourceTree = "<group>";
 		};
 		F8702A6B96FCEE5108226F6F /* Frameworks */ = {
@@ -276,6 +305,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B773B4621951F0A00D5983A /* drunkGiraffe.jpg in Resources */,
+				6B773B442195118900D5983A /* the-youtube-logo-3238901_640.png in Resources */,
 				6B773AF221919C9D00D5983A /* LaunchScreen.storyboard in Resources */,
 				6B773AEF21919C9D00D5983A /* Assets.xcassets in Resources */,
 				6B773B1621919F0B00D5983A /* awsconfiguration.json in Resources */,
@@ -382,6 +413,7 @@
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/CircleMenu/CircleMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -395,6 +427,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -408,6 +441,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B773B3C21950A0D00D5983A /* CircleMenu.swift in Sources */,
+				6B773B3A21950A0D00D5983A /* CircleMenuButton.swift in Sources */,
+				6B773B3B21950A0D00D5983A /* CircleMenuLoader.swift in Sources */,
 				6B773AE721919C9B00D5983A /* ViewController.swift in Sources */,
 				6B773AE521919C9B00D5983A /* AppDelegate.swift in Sources */,
 				6B773AED21919C9B00D5983A /* Getit.xcdatamodeld in Sources */,
